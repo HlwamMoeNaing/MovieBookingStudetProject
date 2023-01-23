@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="@dimen/margin_medium">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/tvDate"
+          android:paddingStart="8dp"
+          android:paddingEnd="8dp"
+          android:layout_marginEnd="@dimen/margin_medium"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:text="10th\nAUG"
+          android:textStyle="bold"
+          android:layout_marginTop="@dimen/margin_medium"
+          android:background="@drawable/button_radius_bg"
+          android:elevation="@dimen/margin_medium_2"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avenger_item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginBottom="40dp"
+            android:elevation="@dimen/margin_medium_2"
+            android:text="Black Window"
+            android:id="@+id/tvMovieName"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_smaller"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvImDb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imbd_background"
+            android:gravity="center"
+            android:text="IMDb"
+            android:layout_marginEnd="2dp"
+           app:layout_constraintEnd_toStartOf="@id/tvImDbText"
+            app:layout_constraintTop_toTopOf="@id/tvMovieName"
+            app:layout_constraintBottom_toBottomOf="@id/tvMovieName"
+            android:textSize="8sp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:elevation="@dimen/margin_medium_2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+        <TextView
+            android:id="@+id/tvImDbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="9.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_medium"
+            app:layout_constraintBottom_toBottomOf="@id/tvImDb"
+            app:layout_constraintTop_toTopOf="@id/tvImDb"
+            android:textSize="@dimen/text_smaller"
+            android:elevation="@dimen/margin_medium_2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gardient_view_item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U/A"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_smaller"
+            app:layout_constraintTop_toBottomOf="@id/tvMovieName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_medium"/>
+
+
+        <View
+            android:id="@+id/vDot"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            app:layout_constraintStart_toEndOf="@id/tvUA"
+            app:layout_constraintTop_toTopOf="@id/tvUA"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintBottom_toBottomOf="@id/tvUA"
+            android:background="@drawable/white_dot_bg"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvThreeD"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintStart_toEndOf="@id/vDot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvUA"
+            android:text="2D,3D,3D IMAX,DBOX\n3D"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:layout_marginEnd="@dimen/margin_medium"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

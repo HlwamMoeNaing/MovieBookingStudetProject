@@ -71,7 +71,7 @@
             android:textColor="@color/textColorGrey"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
+            android:background="@drawable/button_radius_bg"
             android:id="@+id/btnNowShowing"/>
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
@@ -79,8 +79,9 @@
             android:textAllCaps="false"
             android:textColor="@color/textColorGrey"
             android:text="Coming Soon"
-            android:layout_height="wrap_content"
             android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+
             android:id="@+id/btnComingSoon"/>
 
 

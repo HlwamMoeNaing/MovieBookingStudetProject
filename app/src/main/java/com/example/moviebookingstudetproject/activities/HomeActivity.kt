@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.Menu
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -18,6 +19,9 @@ import kotlinx.android.synthetic.main.activity_home.view.*
 import java.lang.Math.abs
 
 class HomeActivity : AppCompatActivity() {
+    private var isNowShowing = true
+    private var isComingSoon = false
+    
     companion object {
         fun startHome(context: Context): Intent {
             return Intent(context, HomeActivity::class.java)
@@ -32,6 +36,25 @@ class HomeActivity : AppCompatActivity() {
         setUpToolBar()
         init()
         setUpTransformer()
+
+        btnNowShowing.setOnClickListener {
+            isNowShowing = true
+            isComingSoon = false
+            if(isNowShowing){
+                btnNowShowing.background = AppCompatResources.getDrawable(this,R.drawable.button_radius_bg)
+                btnComingSoon.background = AppCompatResources.getDrawable(this,R.drawable.button_transprance_radius_bg)
+            }
+        }
+
+        btnComingSoon.setOnClickListener {
+            isNowShowing = false
+            isComingSoon = true
+            if(isComingSoon){
+                btnComingSoon.background = AppCompatResources.getDrawable(this,R.drawable.button_radius_bg)
+                btnNowShowing.background = AppCompatResources.getDrawable(this,R.drawable.button_transprance_radius_bg)
+            }
+        }
+        
     }
 
     private fun setUpToolBar() {
