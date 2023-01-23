@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MovieBookingStudetProject</string>
+    <string name="cinema">Cinema</string>
+    <string name="lbl_phone_verify">Verify Your Phone Number</string>
+    <string name="lbl_digit_code_send_msg">We will send 6-digits sms code\nto verify ypur phone number</string>
+    <string name="lbl_mobile_number">Mobile Number</string>
+    <string name="lbl_phone_number">9763695493</string>
+    <string name="ibl_country_code">Country Code</string>
+    <string name="lbl_team_condition">By clicking, I accept Terms Condition Privacy Policy</string>
+    <string name="lbl_otp_1">1</string>
+    <string name="lbl_resend_code">Resend Code</string>
+    <string name="lbl_don_t_receive_otp">Don\'t receive OTP?</string>
+    <string name="lbl_confirm_otp">Confirm OTP</string>
+    <string name="lbl_enter_otp_code">Enter OTP Code</string>
+    <string name="lbl_pick_region">Pick Region</string>
+    <string name="lbl_cities">Cities</string>
+    <string name="lbl_yangon">Yangon</string>
+    <string name="ll_search">Search</string>
+    <string name="near_me">Near Me</string>
+    <string name="lbl_scan">Sca</string>
+    <string name="lbl_noti">Notification</string>
+</resources>

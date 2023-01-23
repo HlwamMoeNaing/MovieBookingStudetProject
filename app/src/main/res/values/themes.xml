@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MovieBookingStudetProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomSpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/drop_down</item>
+    </style>
+
+
+    <style name="Widget.App.ButtonStyle"
+        parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/GreenButtonThemeOverlay</item>
+    </style>
+
+    <style name="GreenButtonThemeOverlay">
+        <item name="colorPrimary">@color/button_color</item>
+    </style>
+
+
+    <style name="SearchViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@android:color/black</item>
+    </style>
+</resources>

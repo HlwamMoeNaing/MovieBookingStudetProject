@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivC"
+        android:layout_width="@dimen/width_splash_logo_big"
+        android:layout_height="@dimen/height_splash_logo_big"
+        android:layout_marginTop="@dimen/margin_top_countryCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c_splash" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivVideoIcon"
+        android:layout_width="@dimen/width_splash_logo_icon"
+        android:layout_height="@dimen/height_splash_logo_icon"
+        app:layout_constraintBottom_toBottomOf="@id/ivC"
+        app:layout_constraintEnd_toEndOf="@id/ivC"
+        app:layout_constraintStart_toStartOf="@id/ivC"
+        app:layout_constraintTop_toTopOf="@id/ivC"
+        app:srcCompat="@drawable/video_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPhoneVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="@string/lbl_phone_verify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivC" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSendDigitCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="@string/lbl_digit_code_send_msg"
+        android:textColor="@color/textColorGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneVerify" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_50_dp"
+        android:text="@string/ibl_country_code"
+        android:textColor="@color/textColorGrey"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSendDigitCode" />
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="@dimen/width_spinner"
+        android:layout_height="@dimen/height_spinner"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:backgroundTint="@color/textColorGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCountryCode" />
+
+
+    <EditText
+        android:id="@+id/etPhonerNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:backgroundTint="@color/textColorGrey"
+        android:hint="@string/lbl_phone_number"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/countrySpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/countrySpinner"
+        app:layout_constraintTop_toTopOf="@id/countrySpinner" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:background="@drawable/button_radius_bg"
+        android:text="@string/lbl_phone_verify"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhonerNumber" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:text="or"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmOTP" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:background="@color/textColorGrey"
+        app:layout_constraintBottom_toBottomOf="@id/tvOr"
+        app:layout_constraintEnd_toStartOf="@id/tvOr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvOr" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:background="@color/textColorGrey"
+        app:layout_constraintBottom_toBottomOf="@id/tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvOr"
+        app:layout_constraintTop_toTopOf="@id/tvOr" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinueWithGoogle"
+        style="Widget.App.ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_material_google_sign_button"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:backgroundTint="@color/white"
+        android:text="@string/lbl_phone_verify"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/google_icon_24dp"
+        app:iconGravity="textStart"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:gravity="center"
+        android:text="@string/lbl_team_condition"
+        android:textColor="@color/textColorGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

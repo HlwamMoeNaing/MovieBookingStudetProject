@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_yangon"
+        android:paddingStart="@dimen/margin_xlarge"
+        android:paddingEnd="0dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_3x"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityName"
+        android:background="@color/textColorGrey"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

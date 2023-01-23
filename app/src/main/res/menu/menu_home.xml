@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/ll_search" />
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/lbl_noti" />
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/scaner_icon_24dp_white"
+        android:title="@string/lbl_scan" />
+
+</menu>
