@@ -4,6 +4,32 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/drawable/bottom_nav_color.xml" value="0.153" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/drawable/button_radius_bg.xml" value="0.131" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/layout/activity_login.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/layout/fragment_coming_soon.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/layout/fragment_now_showing.xml" value="0.1" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/layout/view_item_movie_list.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/layout/view_pod_movie_list.xml" value="0.303125" />
+        <entry key="..\:/Users/hmn.com/Desktop/MovieBookingStudetProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.303125" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/film_boarder_bg.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/green_dot_background.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/ic_baseline_filter_alt_white_24dp.xml" value="0.1985" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/imbd_background.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/orange_dot_background.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/pink_dot_background.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/transprant_button_bg.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/drawable/white_dot_bg.xml" value="0.152" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/activity_home.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/activity_otpactivity.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/activity_pick_region.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/activity_ticket_booking_screen.xml" value="0.264" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/booking_app_bar.xml" value="0.24572649572649571" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/fragment_now_showing.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/view_item_movie_list.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/view_item_splash.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/view_pod_movie_list.xml" value="0.30052083333333335" />
         <entry key="app/src/main/res/drawable/button_radius_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/button_transprance_radius_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/gardient_view_item.xml" value="0.207" />

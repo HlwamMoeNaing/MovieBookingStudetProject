@@ -6,21 +6,32 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.Menu
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.example.moviebookingstudetproject.R
 import com.example.moviebookingstudetproject.adapters.ViewPagerBannerAdapter
+import com.example.moviebookingstudetproject.const.FetchModel
+import com.example.moviebookingstudetproject.delegate.MovieListDelegate
+import com.example.moviebookingstudetproject.fragments.ComingSoonFragment
+import com.example.moviebookingstudetproject.fragments.NowShowingFragment
+import com.example.moviebookingstudetproject.modal.MovieListItem
+import com.example.moviebookingstudetproject.viewpods.MovieListViewPod
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_home.view.*
 import java.lang.Math.abs
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(),MovieListDelegate {
     private var isNowShowing = true
     private var isComingSoon = false
+    //lateinit var mNowShowingViewPod:MovieListViewPod
     
     companion object {
         fun startHome(context: Context): Intent {
@@ -29,32 +40,77 @@ class HomeActivity : AppCompatActivity() {
     }
     private lateinit var  viewPager2: ViewPager2
     private lateinit var imageList:ArrayList<Int>
+
+    private lateinit var mCommintSoonItems:List<MovieListItem>
+    private var isDate = false
     private lateinit var adapter: ViewPagerBannerAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        mCommintSoonItems = FetchModel.comingSoonArrayList
+        setUpFragment(NowShowingFragment())
+
+
+
+
+
+
+
+
+
         setUpToolBar()
         init()
         setUpTransformer()
+        setUpViewPod()
 
+
+
+        
+    }
+
+
+    private fun setUp(){
         btnNowShowing.setOnClickListener {
+            isDate = false
             isNowShowing = true
             isComingSoon = false
             if(isNowShowing){
                 btnNowShowing.background = AppCompatResources.getDrawable(this,R.drawable.button_radius_bg)
                 btnComingSoon.background = AppCompatResources.getDrawable(this,R.drawable.button_transprance_radius_bg)
             }
+
+            setUpFragment(NowShowingFragment())
+
+
+
+
         }
 
         btnComingSoon.setOnClickListener {
+            isDate = true
+
             isNowShowing = false
             isComingSoon = true
             if(isComingSoon){
                 btnComingSoon.background = AppCompatResources.getDrawable(this,R.drawable.button_radius_bg)
                 btnNowShowing.background = AppCompatResources.getDrawable(this,R.drawable.button_transprance_radius_bg)
             }
+
+            setUpFragment(ComingSoonFragment())
+
         }
-        
+
+
+    }
+
+    private fun setUpViewPod(){
+        setUp()
+        //mNowShowingItems = ArrayList()
+        mCommintSoonItems = ArrayList()
+
+        //mNowShowingViewPod = vpNowShowing as MovieListViewPod
+        //mNowShowingViewPod.setUpMovieListViewPod(this,mNowShowingItems)
     }
 
     private fun setUpToolBar() {
@@ -101,5 +157,16 @@ class HomeActivity : AppCompatActivity() {
         viewPager2.clipChildren = false
         viewPager2.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
 
+    }
+
+    override fun onTapMovie() {
+
+    }
+
+    fun setUpFragment(fragment:Fragment){
+
+     supportFragmentManager.beginTransaction()
+         .replace(R.id.fragmentContainerOne,fragment)
+         .commit()
     }
 }

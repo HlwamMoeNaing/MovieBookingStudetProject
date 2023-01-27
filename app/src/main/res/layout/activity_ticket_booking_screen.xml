@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.TicketBookingScreen">
+
+    <include
+        android:id="@+id/appBarBooking"
+        layout="@layout/booking_app_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/appBarBooking"
+        android:background="@color/colorPrimaryDark" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarBooking">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_3">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDatesBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/llFilmType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvDatesBooking"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/margin_card_medium_2"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:background="@drawable/film_boarder_bg"
+                    android:gravity="center"
+                    android:text="2D"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:background="@drawable/film_boarder_bg"
+                    android:gravity="center"
+                    android:text="3D"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:background="@drawable/film_boarder_bg"
+                    android:gravity="center"
+                    android:text="3D IMAX"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:background="@drawable/film_boarder_bg"
+                    android:gravity="center"
+                    android:text="3D DBOX"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/llFilmType"
+                android:layout_marginTop="30dp"
+
+                android:orientation="horizontal">
+
+              <LinearLayout
+                  android:layout_weight="1"
+                  android:layout_marginStart="16dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:orientation="horizontal">
+                  <View
+                      android:layout_width="8dp"
+                      android:layout_height="8dp"
+                      android:layout_gravity="center"
+                      android:background="@drawable/green_dot_background" />
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:layout_width="80dp"
+                      android:layout_height="40dp"
+                      android:layout_marginEnd="@dimen/margin_medium"
+                      android:gravity="center"
+                      android:text="Available"
+                      android:textColor="@color/greenColor"
+                      android:textStyle="bold" />
+              </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/orange_dot_background" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:text="Filling Fase"
+                        android:textColor="@color/orange_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pink_dot_background" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:text="Almost Full"
+                        android:textColor="@color/pink_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBookingPlaces"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/view_holder_movies_cinema_cinemas_list"
+                android:layout_below="@+id/llAvailable"
+                android:layout_alignParentBottom="true"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

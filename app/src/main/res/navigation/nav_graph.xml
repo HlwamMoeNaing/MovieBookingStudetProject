@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nowShowingFragment">
+
+    <fragment
+        android:id="@+id/nowShowingFragment"
+        android:name="com.example.moviebookingstudetproject.fragments.NowShowingFragment"
+        android:label="fragment_now_showing"
+        tools:layout="@layout/fragment_now_showing" >
+        <action
+            android:id="@+id/action_nowShowingFragment_to_comingSoonFragment"
+            app:destination="@id/comingSoonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comingSoonFragment"
+        android:name="com.example.moviebookingstudetproject.fragments.ComingSoonFragment"
+        android:label="fragment_coming_soon"
+        tools:layout="@layout/fragment_coming_soon" />
+</navigation>

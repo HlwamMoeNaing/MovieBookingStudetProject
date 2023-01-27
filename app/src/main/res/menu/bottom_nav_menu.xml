@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_movies"
+        android:enabled="true"
+        android:icon="@drawable/movies"
+        android:title="@string/movies"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_cinema"
+        android:enabled="true"
+        android:icon="@drawable/theater"
+        android:title="@string/lbl_cinema"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_ticket"
+        android:enabled="true"
+        android:icon="@drawable/tickets"
+        android:title="@string/lbl_ticket"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_24_white"
+        android:title="@string/lbl_profile"
+        app:showAsAction="ifRoom" />
+</menu>

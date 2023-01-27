@@ -27,7 +27,7 @@
         android:layout_marginEnd="@dimen/text_regular_2x"
         android:id="@+id/bannerViewPager"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appBayLayoutHome"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bannerViewPager"
         android:id="@+id/dotsIndicatorBanner"
-        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:dotsColor="@android:color/darker_gray"
@@ -56,7 +56,7 @@
         android:layout_marginEnd="@dimen/margin_medium_2"
         android:padding="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/search_gardient_bg"
         android:id="@+id/llToggle"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,5 +86,53 @@
 
 
     </LinearLayout>
+<!--    <include-->
+<!--        android:layout_marginStart="@dimen/margin_medium"-->
+<!--        android:layout_marginEnd="@dimen/margin_medium"-->
+<!--        android:id="@+id/vpNowShowing"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/llToggle"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        layout="@layout/view_pod_movie_list"-->
+<!--        android:layout_marginTop="@dimen/margin_card_medium_2"/>-->
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        app:itemTextColor="@color/bottom_nav_color_state"
+        app:itemIconTint="@color/bottom_nav_color_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_host_fragment"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/llToggle"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--        app:navGraph="@navigation/nav_graph"-->
+<!--        />-->
+    <androidx.fragment.app.FragmentContainerView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llToggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/fragmentContainerOne"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

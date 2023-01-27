@@ -16,6 +16,9 @@
     <color name="tran_overlay">#1A000000</color>
     <color name="button_color">#00FF6A</color>
     <color name="textColorGrey">#888888</color>
+    <color name="greenColor">#00FF6A</color>
+    <color name="orange_color">#FF7A00</color>
+    <color name="pink_color">#FF00B8</color>
 
 
 </resources>
