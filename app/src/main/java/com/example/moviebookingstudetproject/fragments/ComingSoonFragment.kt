@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.moviebookingstudetproject.R
+import com.example.moviebookingstudetproject.activities.DetailActivity
 import com.example.moviebookingstudetproject.const.FetchModel
 import com.example.moviebookingstudetproject.delegate.MovieListDelegate
 import com.example.moviebookingstudetproject.modal.MovieListItem
@@ -38,6 +39,7 @@ class ComingSoonFragment : Fragment(),MovieListDelegate {
     }
 
     override fun onTapMovie() {
+        startActivity(DetailActivity.newIntent(requireContext()))
 
     }
 

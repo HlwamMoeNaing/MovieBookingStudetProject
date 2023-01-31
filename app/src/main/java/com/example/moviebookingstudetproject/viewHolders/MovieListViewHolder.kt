@@ -5,4 +5,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.moviebookingstudetproject.delegate.MovieListDelegate
 
 class MovieListViewHolder(view: View,delegate: MovieListDelegate):RecyclerView.ViewHolder(view) {
+    init {
+        view.setOnClickListener {
+            delegate.onTapMovie()
+        }
+    }
 }

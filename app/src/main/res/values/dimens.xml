@@ -47,4 +47,12 @@
     <dimen name="margin_60_dp">60dp</dimen>
     <dimen name="height_chip">40dp</dimen>
     <dimen name="padding_9dp">9dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="width_seek_bar">250dp</dimen>
+    <dimen name="width_action_bar_icon_24dp">24dp</dimen>
+    <dimen name="height_action_bar_icon_24dp">24dp</dimen>
+    <dimen name="width_snack_arrow_16dp">16dp</dimen>
+    <dimen name="height_snack_arrow_16dp">16dp</dimen>
 </resources>

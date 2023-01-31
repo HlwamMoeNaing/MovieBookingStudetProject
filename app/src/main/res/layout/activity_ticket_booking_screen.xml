@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".activities.TicketBookingScreen">
+    tools:context=".activities.CinemaListActivity">
 
     <include
         android:id="@+id/appBarBooking"
@@ -141,7 +141,7 @@
                         android:layout_height="40dp"
                         android:layout_marginEnd="@dimen/margin_medium"
                         android:gravity="center"
-                        android:text="Filling Fase"
+                        android:text="Filling First"
                         android:textColor="@color/orange_color"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -176,11 +176,10 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvBookingPlaces"
                 android:layout_width="match_parent"
-                tools:listitem="@layout/view_holder_movies_cinema_cinemas_list"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/llAvailable"
                 android:layout_alignParentBottom="true"
-                android:layout_height="match_parent"/>
-
+                tools:listitem="@layout/view_holder_cenima_list" />
         </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>

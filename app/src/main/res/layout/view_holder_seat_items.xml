@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_5dp"
+    android:paddingTop="@dimen/margin_medium"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+
+        android:id="@+id/tvSeatType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Normal (4500ks)"
+        android:textColor="@color/textColorGrey"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSeatClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginTop="20dp"
+        android:text="A"
+        android:textColor="@color/textColorGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSeatType" />
+
+    <LinearLayout
+        android:id="@+id/llSeats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/tvSeatClass"
+        app:layout_constraintEnd_toStartOf="@+id/tvSeatClassEnd"
+        app:layout_constraintStart_toEndOf="@id/tvSeatClass"
+        app:layout_constraintTop_toTopOf="@id/tvSeatClass">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairOne"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairTwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairThree"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairFour"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairBlankOne"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairBlankTwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairFive"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairSix"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairSeven"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairEight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSeatClassEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:text="A"
+        android:textColor="@color/textColorGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSeatType" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSeatClassBStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginTop="25dp"
+        android:text="B"
+        android:textColor="@color/textColorGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSeatClass" />
+
+    <LinearLayout
+
+        android:id="@+id/llSeatsB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/tvSeatClassBStart"
+        app:layout_constraintEnd_toStartOf="@+id/tvSeatClassBEnd"
+        app:layout_constraintStart_toEndOf="@id/tvSeatClassBStart"
+        app:layout_constraintTop_toTopOf="@id/tvSeatClassBStart">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairOneClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairTwoClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairThreeClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairFourClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairBlankOneClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairBlankTwoClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairFiveClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairSixClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairSevenClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChairEightClassB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chair_grey" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSeatClassBEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:text="B"
+        android:textColor="@color/textColorGrey"
+        app:layout_constraintBottom_toBottomOf="@id/tvSeatClassBStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSeatClassBStart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.SeatActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleCentered="true" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEllipse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appBar">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEllipse"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ellipse" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/screen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_3x"
+                app:layout_constraintBottom_toBottomOf="@id/ivEllipse"
+                app:layout_constraintEnd_toEndOf="@id/ivEllipse"
+                app:layout_constraintStart_toStartOf="@id/ivEllipse"
+                app:layout_constraintTop_toTopOf="@id/ivEllipse" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSeats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/constraintEllipse"
+            android:layout_marginTop="@dimen/margin_5dp"
+            tools:itemCount="3"
+            tools:listitem="@layout/view_holder_gold_seat" />
+
+        <LinearLayout
+            android:id="@+id/llSeatTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rvSeats"
+            android:background="#222222"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_10dp"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/margin_medium"
+                    android:layout_height="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/white_circle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/lbl_available"
+                    android:textColor="@color/textColorGrey"
+                    android:textSize="@dimen/text_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/grey_circle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+
+                    android:text="@string/lbl_taken"
+                    android:textColor="@color/textColorGrey"
+                    android:textSize="@dimen/text_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/button_radius_bg" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/lbl_your_selection"
+                    android:textColor="@color/textColorGrey"
+                    android:textSize="@dimen/text_regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/mSeekBar"
+            android:layout_width="@dimen/width_seek_bar"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSeatTab"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_large"
+            android:max="250"
+            android:progress="100"
+            android:progressBackgroundTint="@color/textColorGrey"
+            android:progressTint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/margin_card_medium_2"
+            android:layout_height="@dimen/margin_card_medium_2"
+            app:srcCompat="@drawable/ic_plus"
+            android:layout_alignTop="@id/mSeekBar"
+            android:layout_alignBottom="@id/mSeekBar"
+            android:layout_toStartOf="@id/mSeekBar"
+            android:id="@+id/ivPlus"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/margin_card_medium_2"
+            android:layout_height="@dimen/margin_card_medium_2"
+            app:srcCompat="@drawable/ic_minus"
+            android:layout_alignTop="@id/mSeekBar"
+            android:layout_alignBottom="@id/mSeekBar"
+           android:layout_toEndOf="@id/mSeekBar"
+            android:id="@+id/ivMinus"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBuy"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/margin_50_dp"
+            android:layout_below="@+id/ivMinus"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_50_dp"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            app:srcCompat="@drawable/floating_booking_btn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Tickets"
+            android:textColor="@color/white"
+            android:layout_alignTop="@+id/btnBuy"
+            android:layout_toStartOf="@id/btnBuy"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:id="@+id/tvTicketNumber"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17000Ks"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_regular_2x"
+            android:textColor="@color/button_color"
+           android:layout_below="@+id/tvTicketNumber"
+            android:layout_toStartOf="@id/btnBuy"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:id="@+id/tvTicketPrice"/>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

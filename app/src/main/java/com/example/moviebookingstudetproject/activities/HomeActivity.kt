@@ -8,6 +8,7 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.Menu
+import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
@@ -160,6 +161,7 @@ class HomeActivity : AppCompatActivity(),MovieListDelegate {
     }
 
     override fun onTapMovie() {
+
 
     }
 
