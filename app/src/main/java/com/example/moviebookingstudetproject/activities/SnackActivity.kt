@@ -22,6 +22,7 @@ class SnackActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_snack)
         setUpTabLayout()
+        helloGit()
     }
 
     fun setUpTabLayout() {
@@ -56,4 +57,9 @@ class SnackActivity : AppCompatActivity() {
 
         }.attach()
     }
+    fun helloGit(){
+        print("Hello Git")
+    }
+
+
 }
