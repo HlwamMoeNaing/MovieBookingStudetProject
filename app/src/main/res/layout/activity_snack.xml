@@ -18,8 +18,8 @@
         android:id="@+id/tabLayoutSnackBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimaryDark"
-        app:tabBackground="@color/colorPrimaryDark"
+        android:backgroundTint="@color/pink_color"
+        app:tabBackground="@color/pink_color"
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorColor="@color/colorAccent"
         app:tabIndicatorFullWidth="false"
@@ -28,6 +28,7 @@
         app:tabRippleColor="@color/colorAccent"
         app:tabTextColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appBarInclude"
         />
     <androidx.viewpager2.widget.ViewPager2
@@ -43,6 +44,17 @@
         android:layout_marginBottom="@dimen/margin_medium_2"
         />
 
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="@dimen/margin_card_medium_2"-->
+<!--        android:layout_marginEnd="@dimen/margin_card_medium_2"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:id="@+id/fContainer"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tabLayoutSnackBar"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btnGoToCard"/>-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btnGoToCard"
         android:layout_width="match_parent"
