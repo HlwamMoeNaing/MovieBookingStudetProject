@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".fragments.AllSnackFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:textColor="@color/white"
-        android:layout_height="match_parent"
-        android:text="ALl Snack Fragment" />
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/snack_recycler_view_pod"
+    android:id="@+id/vpSnack"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

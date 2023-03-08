@@ -29,9 +29,9 @@ object FetchModel {
     )
 
 
-    //val tabList = listOf("All","Combo","Snack","Pop Corn","p")
+    val tabList = listOf("All","Combo","Snack","Pop Corn","Beverage")
 
-    val tabList = listOf("All","Pop Corn","p","Combo","Snack")
+   // val tabList = listOf("All","Pop Corn","p","Combo","Snack")
 
 
 

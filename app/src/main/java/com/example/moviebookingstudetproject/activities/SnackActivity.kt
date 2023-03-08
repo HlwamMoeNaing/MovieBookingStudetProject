@@ -29,6 +29,10 @@ class SnackActivity : AppCompatActivity() {
         setContentView(R.layout.activity_snack)
         setUpTabLayout()
         helloGit()
+        btnGoToCard.setOnClickListener {
+            CheckoutActivity.startMe(this)
+        }
+
        // setUpListener()
     }
 

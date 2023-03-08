@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ComboFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <include
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/white"
-        android:text="Combo Fragment" />
+        android:layout_height="wrap_content"
+        layout="@layout/snack_recycler_view_pod"
+        android:id="@+id/vpCombo"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,12 +7,13 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivC"
-        android:layout_width="@dimen/width_splash_logo_big"
-        android:layout_height="@dimen/height_splash_logo_big"
+        android:layout_width="@dimen/splash_logo_width"
+        android:layout_height="@dimen/splash_logo_150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:srcCompat="@drawable/c_splash" />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -27,8 +28,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivCSmall"
-        android:layout_width="@dimen/width_splash_logo_c"
-        android:layout_height="@dimen/height_splash_logo_c"
+        android:layout_width="@dimen/margin_30dp"
+        android:layout_height="@dimen/margin_25dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/ivC"

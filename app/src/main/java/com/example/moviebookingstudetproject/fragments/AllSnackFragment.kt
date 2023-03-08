@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.moviebookingstudetproject.R
+import com.example.moviebookingstudetproject.viewpods.SnackListViewPod
+import kotlinx.android.synthetic.main.fragment_all_snack.*
 
 class AllSnackFragment : Fragment() {
+    lateinit var mAllSnackViewPod: SnackListViewPod
 
 
     override fun onCreateView(
@@ -18,5 +21,14 @@ class AllSnackFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_all_snack, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUpViewPod()
+    }
+
+    private fun setUpViewPod() {
+        mAllSnackViewPod = vpSnack as SnackListViewPod
+        mAllSnackViewPod.setUpSnackViewPod()
+    }
 
 }

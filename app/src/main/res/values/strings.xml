@@ -42,4 +42,19 @@
     <string name="lbl_taken">Taken</string>
     <string name="lbl_your_selection">Your Selection</string>
     <string name="lbl_grab_a_bite">Grab a bite!</string>
+    <string name="lbl_checkout">Checkout</string>
+    <string name="lbl_closed_bracket">)</string>
+    <string name="lbl_food_and_beverage">Food and Beverage</string>
+    <string name="lbl_convenience_fee">Convenience Fee</string>
+    <string name="lbl_total">Total</string>
+    <string name="lbl_refund_amount">Refund Amount</string>
+    <string name="lbl_payment">Payment</string>
+    <string name="lbl_enter_your_name">Enter your name</string>
+    <string name="lbl_choose_your_payment_type">Choose your payment type</string>
+    <string name="lbl_ticket_confirmation">TicketConfirmation</string>
+    <string name="lbl_tpin">TPIN :</string>
+    <string name="lbl_cinema_detail">Cinema Detail</string>
+    <string name="lbl_facilities">Facilities</string>
+    <string name="lbl_ticket_cancellation">Ticket Cancellation</string>
+    <string name="lbl_safety">Safety</string>
 </resources>

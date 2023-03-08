@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragments.HomeFragment">
+
+    <include
+        android:id="@+id/appBarMoviesHome"
+        layout="@layout/app_bar_home_layour" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarMoviesHome"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerViewPager"
+                android:layout_width="@dimen/width_banner_image"
+                android:layout_height="@dimen/width_banner"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:elevation="@dimen/margin_medium" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dotsIndicatorBanner"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bannerViewPager"
+                android:layout_marginTop="@dimen/margin_card_medium_2"
+                android:elevation="@dimen/margin_small"
+                app:dotsColor="@android:color/darker_gray"
+                app:dotsCornerRadius="@dimen/margin_small"
+                app:dotsSize="@dimen/margin_medium"
+                app:dotsSpacing="@dimen/margin_small"
+                app:dotsWidthFactor="1.0"
+                app:progressMode="false"
+                app:selectedDotColor="@color/button_color" />
+
+            <LinearLayout
+                android:id="@+id/llToggle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:background="@drawable/search_gardient_bg"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_below="@id/dotsIndicatorBanner">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNowShowing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius_bg"
+                    android:text="Now Showing"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColorGrey" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComingSoon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Coming Soon"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/textColorGrey" />
+
+
+            </LinearLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:layout_below="@id/llToggle"
+                android:id="@+id/fragmentContainerOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

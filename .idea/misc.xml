@@ -45,42 +45,67 @@
         <entry key="..\:/Users/hmn.com/Desktop/PADC/MovieBookingStudetProject/app/src/main/res/layout/view_pod_movie_list.xml" value="0.30052083333333335" />
         <entry key="app/src/main/res/drawable-v24/details_times_background.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_arrow_back_white_24dp.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/bg_checkout.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/black_circle_small_background.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/bottom_nav_color.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/button_radius_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/button_transprance_radius_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/cinema_time_card_background.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/circle_black_background.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/gardient_view_item.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/grey_color_grey_background.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_accent_24dp.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_month_accent_24dp.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/ic_baseline_info_grey_16dp.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_white_24dp.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/ic_baseline_location_on_accent_24dp.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/ic_baseline_pause_white_22dp.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_white_22dp.xml" value="0.203" />
         <entry key="app/src/main/res/drawable/ic_couple_seat_svg.xml" value="0.16" />
         <entry key="app/src/main/res/drawable/imbd_background.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/otp_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/pink_dot_background.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/search_gardient_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/search_view_background.xml" value="0.207" />
+        <entry key="app/src/main/res/drawable/snack_bavkground.xml" value="0.1755" />
         <entry key="app/src/main/res/drawable/snack_button_background.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/ticket_checkout_details_background.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/ticket_comfirmation_detail_aupper.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/transprant_button_bg.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/white_dot_bg.xml" value="0.207" />
+        <entry key="app/src/main/res/layout/activity_cenima_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/activity_otpactivity.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/activity_pick_region.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_seat.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_seat_plan.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/activity_snack.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_ticket_booking_screen.xml" value="0.18379985137478325" />
+        <entry key="app/src/main/res/layout/activity_ticket_comfirmation.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/app_bar_cenima_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/app_bar_home_layour.xml" value="0.3854166666666667" />
         <entry key="app/src/main/res/layout/app_bar_snack.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_all_snack.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/appbar_checkout.xml" value="0.3854166666666667" />
+        <entry key="app/src/main/res/layout/appbar_payment.xml" value="0.3854166666666667" />
+        <entry key="app/src/main/res/layout/booking_app_bar.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/fragment_all_snack.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_beverage.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/fragment_cenima_list.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/fragment_combo.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/fragment_coming_soon.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/fragment_now_showing.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/fragment_pop_corn.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/fragment_snack.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/gardient_view_item.xml" value="0.3854166666666667" />
+        <entry key="app/src/main/res/layout/snack_recycler_view_pod.xml" value="0.3854166666666667" />
+        <entry key="app/src/main/res/layout/ticket_confirmation_detail_upper.xml" value="0.3854166666666667" />
         <entry key="app/src/main/res/layout/view_holder_cast_list.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/layout/view_holder_cenima_list.xml" value="0.3854166666666667" />
         <entry key="app/src/main/res/layout/view_holder_cinema_time_card.xml" value="0.75" />
@@ -91,7 +116,10 @@
         <entry key="app/src/main/res/layout/view_item_banner.xml" value="0.3854166666666667" />
         <entry key="app/src/main/res/layout/view_item_cities.xml" value="0.3854166666666667" />
         <entry key="app/src/main/res/layout/view_item_movie_list.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/view_item_splash.xml" value="0.3854166666666667" />
+        <entry key="app/src/main/res/layout/view_item_splash.xml" value="0.3308702791461412" />
+        <entry key="app/src/main/res/layout/view_pod_movie_list.xml" value="0.38645833333333335" />
+        <entry key="app/src/main/res/layout/viewholder_tiket_checkout_items.xml" value="0.3854166666666667" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.38645833333333335" />
         <entry key="app/src/main/res/menu/menu_home.xml" value="0.3854166666666667" />
       </map>
     </option>

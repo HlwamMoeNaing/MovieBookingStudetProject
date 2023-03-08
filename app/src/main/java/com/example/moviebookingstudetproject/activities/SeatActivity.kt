@@ -13,9 +13,10 @@ import kotlinx.android.synthetic.main.activity_seat.*
 class SeatActivity : AppCompatActivity(){
 
 
+
     companion object {
-        fun newIntent(context: Context): Intent {
-            return Intent(context, SeatActivity::class.java)
+        fun startMe(context: Context) {
+            context.startActivity(Intent(context, SeatActivity::class.java))
         }
     }
     lateinit var mSeatAdapter:SeatAdapter

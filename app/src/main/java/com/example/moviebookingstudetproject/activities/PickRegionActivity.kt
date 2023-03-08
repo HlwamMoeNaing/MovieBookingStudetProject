@@ -34,6 +34,7 @@ class PickRegionActivity : AppCompatActivity(),CityDelegate {
     }
 
     override fun onTap() {
-        startActivity( HomeActivity.startHome(this))
+//        startActivity( HomeActivity.startMe(this))
+        HomeActivity.startMe(this)
     }
 }

@@ -13,8 +13,8 @@
         android:paddingEnd="0dp"
         android:textColor="@color/white"
         android:textSize="@dimen/text_regular_3x"
-        android:paddingTop="@dimen/margin_card_medium_2"
-        android:paddingBottom="@dimen/margin_card_medium_2"
+        android:paddingTop="@dimen/icon_size_20dp"
+        android:paddingBottom="@dimen/icon_size_20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>

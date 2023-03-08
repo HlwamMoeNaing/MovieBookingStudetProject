@@ -12,9 +12,10 @@ import com.example.moviebookingstudetproject.adapters.CinemaDateCardAdapter
 import com.example.moviebookingstudetproject.adapters.CinemaListAdapter
 import com.example.moviebookingstudetproject.adapters.SeatAdapter
 import com.example.moviebookingstudetproject.delegate.SeatItemDelegate
+import com.example.moviebookingstudetproject.delegate.SeatItemDelegateSeeDetail
 import kotlinx.android.synthetic.main.activity_ticket_booking_screen.*
 
-class CinemaListActivity : AppCompatActivity(),SeatItemDelegate {
+class CinemaListActivity : AppCompatActivity(),SeatItemDelegate,SeatItemDelegateSeeDetail {
     lateinit var cinemaDateCardAdapter: CinemaDateCardAdapter
     lateinit var mCinemaListAdapter: CinemaListAdapter
 
@@ -40,7 +41,7 @@ class CinemaListActivity : AppCompatActivity(),SeatItemDelegate {
 
 
     private fun setUpCinemaListRecyclerView() {
-        mCinemaListAdapter = CinemaListAdapter(this)
+        mCinemaListAdapter = CinemaListAdapter(this,this)
         rvBookingPlaces.adapter = mCinemaListAdapter
         val layoutManager = LinearLayoutManager(this)
         rvBookingPlaces.layoutManager = layoutManager
@@ -57,5 +58,9 @@ class CinemaListActivity : AppCompatActivity(),SeatItemDelegate {
         val i = Intent(this,SeatActivity::class.java)
         startActivity(i)
 
+    }
+
+    override fun onTapSeeDetail() {
+        Toast.makeText(this,"on Tap See Detail ",Toast.LENGTH_LONG).show()
     }
 }

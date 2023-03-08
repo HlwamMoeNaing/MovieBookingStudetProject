@@ -10,7 +10,7 @@
         android:id="@+id/civCastPictureMoviesDetails"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/avenger_item"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
         app:civ_circle_background_color="@color/colorPrimary"
